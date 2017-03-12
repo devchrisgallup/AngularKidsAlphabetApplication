@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    margin: 0; 
+    padding: 0; 
+    background-color: green;
+    color: #FFF; 
+}
+
+h1 {
+    font-size: 3rem; 
+}
+
+hr {
+    width: 50%; 
+}
+
+button {
+    padding: 3%; 
+    margin: 0.5%; 
+    font-size: 3rem; 
+    color: white; 
+    background-color: yellow; 
+    border-radius: 90px; 
+}
+
+.container {
+    text-align: center;  
+}
