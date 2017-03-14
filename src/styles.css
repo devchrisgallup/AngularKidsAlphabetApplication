@@ -3,7 +3,7 @@
 html, body {
     margin: 0; 
     padding: 0; 
-    background-color: green;
+    background-color: #A0D6F5;
     color: #FFF; 
 }
 
@@ -16,11 +16,11 @@ hr {
 }
 
 button {
-    padding: 3%; 
+    padding: 1.5%; 
     margin: 0.5%; 
     font-size: 3rem; 
-    color: white; 
-    background-color: yellow; 
+    color: #A0D6F5; 
+    background-color: #FFF; 
     border-radius: 90px; 
 }
 
