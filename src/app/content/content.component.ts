@@ -1,16 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser'
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  styleUrls: ['./content.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  constructor(public ref: ChangeDetectorRef) {
+
+   }
 
   ngOnInit() {
+
   }
 
   // audio files
@@ -41,11 +46,18 @@ export class ContentComponent implements OnInit {
   private y = new Audio('./assets/y.m4a');
   private z = new Audio('./assets/z.m4a');
 
+  // innerHTML
+  public Adisplay = 'A'; 
+
   // determin which value was passed to 
   // play the correct sound
   processData(item) {
     if (item == 'a'){
       this.a.play();
+      this.Adisplay = "<img src='./assets/img/apple.jpg' />";
+      setTimeout(() => {
+        location.reload(); 
+      }, 2000);
     } else if (item == 'b') {
       this.b.play(); 
     } else if (item == 'c') {

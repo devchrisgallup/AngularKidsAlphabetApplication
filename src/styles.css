@@ -24,6 +24,14 @@ button {
     border-radius: 90px; 
 }
 
+img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 90px; 
+    padding: -1.5%; 
+    margin: -0.5%; 
+}
+
 .container {
     text-align: center;  
 }
